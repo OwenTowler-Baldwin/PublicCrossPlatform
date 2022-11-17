@@ -58,7 +58,7 @@ public class TopDownCombat : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+   {/* 
         if (pauseMenu.active == false)
         {
             if (optionsMenu.active == false)
@@ -77,11 +77,13 @@ public class TopDownCombat : MonoBehaviour
                     }
                 }
             }
-        }
+        }*/
     }
 
-    void MainAttack()// the mainAttack function 
-    {
+   public void MainAttack()// the mainAttack function 
+   {
+        if(amoCount <= 0)
+            return;
         //play the attack animation, to be fully implemented once animator is ready
         animator.SetTrigger("MainAttack");
 
