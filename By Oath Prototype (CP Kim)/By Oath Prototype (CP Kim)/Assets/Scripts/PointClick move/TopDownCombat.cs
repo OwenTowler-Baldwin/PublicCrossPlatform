@@ -91,7 +91,7 @@ public class TopDownCombat : MonoBehaviour
         amoCount--;
         holyMeter.SetWater(amoCount);//calling UI scripts
         // play attack sound
-      //  audSrc.PlayOneShot(attackSounds[Random.Range(0, attackSounds.Length)]);
+        audSrc.PlayOneShot(attackSounds[Random.Range(0, attackSounds.Length)]);
 
 
         //detect enemies in range
