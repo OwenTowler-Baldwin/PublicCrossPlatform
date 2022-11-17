@@ -75,7 +75,7 @@ public class EnemyCP : MonoBehaviour
 
         //dissable the enemy
 
-        GetComponent<EnemyMove>().enabled = false;
+        GetComponent<EnemyCP>().enabled = false;
         GetComponent<Collider>().enabled = false;
 
 

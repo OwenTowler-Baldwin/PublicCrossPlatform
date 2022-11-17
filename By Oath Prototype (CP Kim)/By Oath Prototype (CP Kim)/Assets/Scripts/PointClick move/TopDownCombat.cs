@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class TopDownCombat : MonoBehaviour
 {
-    Enemy EnemyCP;
+    EnemyCP EnemyCP;
 
 
     public Animator animator;
@@ -103,7 +103,7 @@ public class TopDownCombat : MonoBehaviour
             //damage the enemies
             Debug.Log("Hit" + enemy.name);
 
-            enemy.GetComponent<Enemy>().EnemyTakeDamage(mainAttackDamage);//calls the enemy script and allows damage to be done   
+            enemy.GetComponent<EnemyCP>().EnemyTakeDamage(mainAttackDamage);//calls the enemy script and allows damage to be done   
         }
     }
 
