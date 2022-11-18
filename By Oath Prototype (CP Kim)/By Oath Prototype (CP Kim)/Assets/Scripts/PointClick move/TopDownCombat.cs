@@ -86,7 +86,7 @@ public class TopDownCombat : MonoBehaviour
             return;
         //play the attack animation, to be fully implemented once animator is ready
         animator.SetTrigger("MainAttack");
-
+       
         // use up ammo
         amoCount--;
         holyMeter.SetWater(amoCount);//calling UI scripts
